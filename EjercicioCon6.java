@@ -1,22 +1,23 @@
 import java.util.Scanner;
 
-public class EjercicioCon2 {
+public class EjercicioCon6 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         boolean salir = false;
         do {
-            System.out.println("2. Forma de saber que número es mayor que el otro");
-
+            System.out.println("6.Para sumar dos número ambos tienen que ser positivos, de lo contrario se multiplicara");
             System.out.println("Ingrese el Primer número ");
             Scanner src= new Scanner(System.in);
             double Num1 = src.nextDouble();
-            System.out.println("Ingrese el Segundo numero ");
+            System.out.println("Ingrese el segundo número ");
             double Num2 = src.nextDouble();
 
-            if (Num2>Num1){
-                System.out.println("El numero mayor es  "+ Num2 + " y el menor es "+ Num1);
+            if (Num1 <0 || Num2 <0){
+                double resul = Num1*Num2;
+                System.out.println("El resultado de la multiplicación es " + resul);
             }else {
-            System.out.println("El numero mayor es "+Num1 + " y el menor es "+Num2);
+                double resul = Num1+Num2;
+                System.out.println("El resultado de la suma es " + resul );
             }
 
 
@@ -28,6 +29,5 @@ public class EjercicioCon2 {
             }
         }while (!salir);
         scanner.close();
-
     }
 }

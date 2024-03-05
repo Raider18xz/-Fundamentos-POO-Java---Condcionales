@@ -5,7 +5,7 @@ public class EjercicioCon3 {
         Scanner scanner = new Scanner(System.in);
         boolean salir = false;
         do {
-            System.out.println("1. Forma de saber el mayor número, de 3 numerós al azar ");
+            System.out.println("3. Forma de saber el mayor número, de 3 numerós al azar ");
 
             System.out.println("Ingrese el Primer numero ");
             Scanner src= new Scanner(System.in);

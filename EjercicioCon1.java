@@ -15,7 +15,7 @@ public class EjercicioCon1 {
          }else {
              System.out.println("Su numero es negativo");
          }
-         System.out.println("¿Desea salir del progama?");
+         System.out.println("Para salir del progamá pulse 99, si quiere continuar ponga cualquier número");
         int opcion = scanner.nextInt();
          if (opcion == 99){
             salir=true;
